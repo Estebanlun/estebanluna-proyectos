@@ -19,15 +19,15 @@ export default function NavBar() {
 
 const Nav = styled.nav`
   width: 100%;
-  height: 3rem;
+  min-height: 4rem;
+
   background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 7px 0rem;
-  padding: 1rem;
+  justify-content: space-around;
+
   .link-home {
-    width: 50%;
+    width: 45%;
     color: white;
     text-decoration: none;
     padding: 0 0 0 1rem;
@@ -93,6 +93,7 @@ const Nav = styled.nav`
     }
     .back{
       display:block;
+      height:2.5rem;
     }
     .backv{
       display:none;
@@ -100,9 +101,17 @@ const Nav = styled.nav`
 }
 
 @media (min-width:1024px) {
+  height:6rem;
   .img{
-      width:30%;
+      width:25%;
     }
+
+    .back{
+   
+    height:3rem;
+
+    }
+
 }
 
 `;

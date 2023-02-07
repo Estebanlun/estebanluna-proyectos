@@ -22,7 +22,7 @@ const Linea = styled.div`
   width: 80%;
   z-index: 0;
   position: relative;
-  height: 2rem;
+  height: 3rem;
   .link {
     color: #fff;
     font-size: 1.4rem;
@@ -78,6 +78,7 @@ const Linea = styled.div`
   }
 
   @media (min-width: 768px) {
+  
     .link {
       justify-content: start;
       padding: 1rem;

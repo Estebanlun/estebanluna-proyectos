@@ -1,9 +1,8 @@
 import { React, useState } from "react";
 import logo from "../../Assets/Logo.png";
-
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
-import { Link } from "react-router-dom";
+
 
 export default function NavBar() {
   const [clicked, setClicked] = useState(false);
@@ -13,9 +12,9 @@ export default function NavBar() {
   return (
     <>
       <NavContainer>
-        <Link className="linkcito" to="/">
+        <a className="linkcito" href="https://esteban-luna.web.app/">
           <img className="div" src={logo} alt="Error" />
-        </Link>
+        </a>
         <div className={`links ${clicked ? "active" : ""}`}>
           <a
             onClick={clicked ? handleClick : !clicked ? "" : handleClick}

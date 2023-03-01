@@ -24,6 +24,7 @@ export default function HomePage() {
       </div>
       <section className="section">
         <ProjectLine n={"1. "} li="MarvelGallery" title="Galeria de Marvel (Computadora)" ></ProjectLine>
+        <ProjectLine n={"2. "} li="ProgresSteps" title="Pasos de Progreso" ></ProjectLine>
       </section>
     </Home>
   );
